@@ -4,7 +4,7 @@ import com.android3.server.api.kingbead.domain.Kingbead;
 import com.android3.server.api.kingbead.dto.KingbeadCreateDto;
 import com.android3.server.api.kingbead.repository.KingbeadRepository;
 import com.android3.server.api.user.User;
-import com.android3.server.api.user.UserRepository;
+import com.android3.server.api.user.repository.UserRepository;
 import com.android3.server.global.exception.CustomException;
 import com.android3.server.global.response.enums.ErrorCode;
 import lombok.RequiredArgsConstructor;
