@@ -23,4 +23,9 @@ public class Bead {
     private User user;
 
     private String content;
+
+    public Bead(User user, String content){
+        this.user=user;
+        this.content=content;
+    }
 }
