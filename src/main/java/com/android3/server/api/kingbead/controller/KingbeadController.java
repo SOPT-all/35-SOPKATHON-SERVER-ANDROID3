@@ -17,9 +17,8 @@ public class KingbeadController {
     private final KingbeadService kingbeadService;
 
     @PostMapping("/kingbead")
-    public ApiResponseDto createKingbead(@RequestHeader Long userId,
-                                         @RequestBody KingbeadCreateDto kingbeadCreateDto) {
-        return ApiResponseDto.success(SuccessCode.KINGBEAD_CREATED_SUCCESS, kingbeadService.createKingbead(userId, kingbeadCreateDto));
+    public ApiResponseDto createKingbead(@RequestHeader Long userId) {
+        return ApiResponseDto.success(SuccessCode.KINGBEAD_CREATED_SUCCESS, kingbeadService.createKingbead(userId));
     }
 
     @GetMapping("/kingbeads")

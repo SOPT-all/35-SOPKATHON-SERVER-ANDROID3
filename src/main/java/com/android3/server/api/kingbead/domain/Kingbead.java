@@ -28,8 +28,7 @@ public class Kingbead {
 
     private String imageUrl;
 
-    public Kingbead(User user, String imageUrl) {
+    public Kingbead(User user) {
         this.user = user;
-        this.imageUrl = imageUrl;
     }
 }

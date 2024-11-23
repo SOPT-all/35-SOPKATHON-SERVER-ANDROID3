@@ -23,12 +23,12 @@ public class KingbeadService {
     private final KingbeadRepository kingbeadRepository;
     private final UserRepository userRepository;
 
-    public KingbeadCreateResponse createKingbead(Long userId, KingbeadCreateDto kingbeadCreateDto) {
+    public KingbeadCreateResponse createKingbead(Long userId) {
         User user = userRepository.findById(userId).orElseThrow(
                 () -> new CustomException(ErrorCode.NOT_FOUND)
         );
 
-        Kingbead kingbead = new Kingbead(user, kingbeadCreateDto.imageUrl());
+        Kingbead kingbead = new Kingbead(user);
         kingbeadRepository.save(kingbead);
 
         return KingbeadCreateResponse.builder()
