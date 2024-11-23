@@ -7,12 +7,14 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
+import jakarta.persistence.Table;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 
 @Entity
 @Getter
 @RequiredArgsConstructor
+@Table(name = "beads")
 public class Bead {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
