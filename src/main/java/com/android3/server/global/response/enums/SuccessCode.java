@@ -9,7 +9,10 @@ import org.springframework.http.HttpStatus;
 @AllArgsConstructor
 public enum SuccessCode {
     //200 OK
-    GET_SUCCESS(20000, HttpStatus.OK, "tt");
+    GET_SUCCESS(20000, HttpStatus.OK, "tt"),
+
+    //201 Created
+    KINGBEAD_CREATED_SUCCESS(20102, HttpStatus.CREATED, "왕구슬 생성 성공");
 
     private final int code;
     private final HttpStatus httpStatus;
