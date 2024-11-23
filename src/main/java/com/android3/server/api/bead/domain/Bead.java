@@ -22,10 +22,17 @@ public class Bead {
     @JoinColumn(name = "user_id")
     private User user;
 
-    private String content;
+    private String content1;
 
-    public Bead(User user, String content){
-        this.user=user;
-        this.content=content;
+    private String content2;
+
+    private boolean checked;
+
+    public Bead(User user, String content1, String content2, boolean checked) {
+        this.user = user;
+        this.content1 = content1;
+        this.content2 = content2;
+        this.checked = checked;
     }
+
 }

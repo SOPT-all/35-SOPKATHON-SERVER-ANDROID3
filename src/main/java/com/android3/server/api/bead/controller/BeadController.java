@@ -25,9 +25,7 @@ public class BeadController {
             @RequestHeader(name="userId") final Long userId,
             @RequestBody final BeadCreateRequest beadCreateRequest
             ) {
-
-        beadService.createBead(userId, beadCreateRequest);
-        return ApiResponseDto.success(SuccessCode.BEAD_CREATE_SUCCESS);
+        return ApiResponseDto.success(SuccessCode.BEAD_CREATE_SUCCESS, beadService.createBead(userId, beadCreateRequest));
     }
 
     @GetMapping("/bead")
