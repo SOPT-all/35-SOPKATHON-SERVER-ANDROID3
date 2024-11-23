@@ -10,10 +10,10 @@ import org.springframework.http.HttpStatus;
 public enum SuccessCode {
     //200 OK
     GET_SUCCESS(20000, HttpStatus.OK, "tt"),
+    GET_KINGBEADS_SUCCESS(20002, HttpStatus.OK, "왕구슬 전체 조회 성공"),
 
     //201 Created
-
-    BEAD_CREATE_SUCCESS(20101,HttpStatus.CREATED, "구슬 생성 성공");
+    BEAD_CREATE_SUCCESS(20101,HttpStatus.CREATED, "구슬 생성 성공"),
     KINGBEAD_CREATED_SUCCESS(20102, HttpStatus.CREATED, "왕구슬 생성 성공");
 
 
