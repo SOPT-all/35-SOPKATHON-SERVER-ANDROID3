@@ -11,6 +11,7 @@ public enum SuccessCode {
     //200 OK
     GET_SUCCESS(20000, HttpStatus.OK, "tt"),
     BEAD_RANDOM_GET_SUCCESS(20001, HttpStatus.OK, "구슬 랜덤 조회 성공"),
+    GET_KINGBEADS_SUCCESS(20002, HttpStatus.OK, "왕구슬 전체 조회 성공"),
 
     //201 Created
     BEAD_CREATE_SUCCESS(20101,HttpStatus.CREATED, "구슬 생성 성공"),
