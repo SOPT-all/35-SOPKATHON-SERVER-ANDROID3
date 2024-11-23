@@ -5,6 +5,7 @@ import lombok.Builder;
 @Builder
 public record BeadGetReponse(
         Long beadId,
-        String content
+        String content1,
+        String content2
 ) {
 }
