@@ -7,6 +7,7 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
+import lombok.Builder;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 
@@ -24,4 +25,9 @@ public class Kingbead {
     private User user;
 
     private String imageUrl;
+
+    public Kingbead(User user, String imageUrl) {
+        this.user = user;
+        this.imageUrl = imageUrl;
+    }
 }
