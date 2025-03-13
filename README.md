@@ -23,13 +23,6 @@
 4️⃣ 수정구 보관함 페이지에서, 수정구를 통하여 과거의 Even If를 랜덤으로 확인하기
 ```
 
-## Branch Strategies
-`main` -> `develop` (default branch) -> `feat`
-
-Issue별로 생성한 `feat` 브랜치에서 작업 후 `develop` 브랜치로 Merge 하는 방식
-
-<br>
-
 ## 시연 영상
 
 
